@@ -13,8 +13,8 @@ with DAG(
     catchup=False
 ) as dag:
 
-    # Cria uma tarefa Python para imprimir "Hello, World!"
+    # Cria uma tarefa Python para imprimir "Olá Mundo!"
     hello_task = PythonOperator(
-        task_id='Olá Mundo!',
+        task_id='hello_world_task',  # task_id corrigido
         python_callable=hello_world
     )
