@@ -7,7 +7,6 @@ def hello_world():
 
 with DAG(
     dag_id='DAG1',
-    owner='Bruno Borges',
     start_date=datetime(2023, 1, 1),
     schedule_interval=None,
     catchup=False
